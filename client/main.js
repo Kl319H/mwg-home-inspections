@@ -31,13 +31,13 @@ Template.nav.events({
 Template.services.helpers({
     services(){
         return [
-            {title : "Exterior", template : "list", items: [
+            {id: "service-1", title : "Exterior", template : "list", items: [
                 {name: "Condition of doors and windows"},
                 {name: "Condition of decks, porches, stoops, stairs and railing"},
                 {name: "Condition of brick or exterior siding"},
                 {name: "Condition of weather stripping, caulking, exterior paints, stains and sealant"},
             ]},
-            {title : "Interior", template : "list", items: [
+            {id: "service-2", title : "Interior", template : "list", items: [
                 {
                  "name": "Condition of vents"
                 },
@@ -60,7 +60,7 @@ Template.services.helpers({
                  "name": "Any visible structural problems"
                 }
             ]},
-            {title : "Attic", template : "list", items: [
+            {id: "service-3", title : "Attic", template : "list", items: [
                 {
                  "name": "Any visible signs of mildew or mold"
                 },
@@ -74,7 +74,7 @@ Template.services.helpers({
                  "name": "Overall structural construction"
                 }
             ]},
-            {title : "Roofing", template : "list", items: [
+            {id: "service-4", title : "Roofing", template : "list", items: [
                 {
                   "name": "Condition of the roof covering, missing shingles or signs of wear"
                  },
@@ -88,7 +88,7 @@ Template.services.helpers({
                   "name": "Any visible structural problems"
                  }
              ]},
-            {title : "Heating and Cooling", template : "list", items: [
+            {id: "service-5", title : "Heating and Cooling", template : "list", items: [
                 {
                   "name": "Visible condition and overall function of furnace, heat pumps and air conditioners"
                  },
@@ -108,7 +108,7 @@ Template.services.helpers({
                   "name": "Inspect thermostat operation"
                  }
              ]},
-            {title : "Plumming and Fixtures", template : "list", items: [
+            {id: "service-6", title : "Plumming and Fixtures", template : "list", items: [
                 {
                  "name": "Observation of main shutoff valve and supply line"
                 },
@@ -131,7 +131,7 @@ Template.services.helpers({
                  "name": "Condition of sump pump, flat, drain and shut off function"
                 }
             ]},
-            {title : "Electrical Systems", template : "list", items: [
+            {id: "service-7", title : "Electrical Systems", template : "list", items: [
                 {
                   "name": "Condition of main disconnect and service line cables"
                  },
@@ -148,7 +148,7 @@ Template.services.helpers({
                   "name": "Condition of switches and light fixtures"
                  }
              ]},
-            {title : "Basements, Crawlspaces and Foundations", template : "list", items: [
+            {id: "service-8", title : "Basements, Crawlspaces and Foundations", template : "list", items: [
                 {
                   "name": "Condition of crawlspace, reporting any signs of moisture or sinking floors over crawlspaces"
                  },
@@ -159,7 +159,7 @@ Template.services.helpers({
                   "name": "Report on bowing foundation walls, settlement and cracking"
                  }
              ]},
-            {title : "Chimneys and Fireplaces", template : "list", items: [
+            {id: "service-9", title : "Chimneys and Fireplaces", template : "list", items: [
                 {
                   "name": "Condition of damper in fireplace"
                  },
@@ -176,7 +176,7 @@ Template.services.helpers({
                   "name": "Condition of mortar"
                  }
              ]},
-            {title : "Exterior Grounds", template : "list", items: [
+            {id: "service-10", title : "Exterior Grounds", template : "list", items: [
                 {
                   "name": "Condition of driveway, sidewalks and retaining walls"
                  },
@@ -187,7 +187,7 @@ Template.services.helpers({
                   "name": "Report on possible future damage from trees and shrubs"
                  }
              ]},
-            {title : "Safety Issues", template : "list", items: [
+            {id: "service-11", title : "Safety Issues", template : "list", items: [
                 {
                   "name": "Condition or absence of smoke detectors"
                  },
