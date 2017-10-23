@@ -178,7 +178,7 @@ Template.services.helpers({
              ]},
             {id: "service-10", title : "Exterior Grounds", template : "list", items: [
                 {
-                  "name": "Condition of driveway, sidewalks and retaining walls"
+                  "name": "Condition of driveways and walkways"
                  },
                  {
                   "name": "Inspect for grading that allows propper drainage"
