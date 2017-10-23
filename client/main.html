@@ -1,0 +1,58 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MWG Inspections</title>
+</head>
+
+<template name="layout">
+    <div class="wrapper">
+      {{> Template.dynamic template=nav}}
+      {{> Template.dynamic template=main}}
+      {{> Template.dynamic template=footer}}
+
+    </div>
+</template>
+
+<template name="nav">
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Request a Quote</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li class="social">
+          <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="top">
+      <h3><a href="#">MWG Home Inspections</a>
+          <p><a href="tel:1-951-529-3410" class="phone">Call Us Today! (951) 529-3410</a>
+              <a href="https://www.trec.texas.gov/" target="_blank">TREC #22740</a></p>
+      </h3>
+    </header>
+</template>
+
+<template name="home">
+    <section class="hero">
+      <img src="images/house.jpg" alt="Beautiful house">
+    </section>
+
+    <section class="details">
+      <p>When committing to an investment as important as a new home, it is crucial that every square inch is built safe and sound, with minimal maintenance for years down the line. At MWG Inspections, I pride myself in working for the best interest of my clients. I offer honest and impartial home inspection services throughout Houston and the surrounding areas. I provide a comprehensive home inspection and take the time to educate you on any and all of my findings. MWG Inspections enriches the homebuying experience by cultivating a better understanding of the property.
+          I believe in open communication. I invite my clients to be present for their home inspection so I can walk them through and discuss any possible defects. Once the inspection is completed, I will send a detailed report delivered to your inbox within 24 hours. I accept post-inspection phone calls to answer any questions. I want to ensure that you have a complete understanding of the home’s strengths and shortcomings.</p>
+    </section>
+</template>
+
+<template name="footer">
+    <footer>
+      <p><a>MWG Home Inspections | Texas City, TX 77591</a></p>
+      <p><a href="tel:1-951-529-3410" class="phone"> Call Us Today! (951) 529-3410</a></p>
+      <p><a href="mailto:michaelgremillion@yahoo.com?Subject=Inspection%20Question" target="_top"> michaelgremillion@yahoo.com</a></p>
+    </footer>
+</template>

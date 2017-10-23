@@ -1,0 +1,178 @@
+/* CSS declarations go here */
+/* Styling */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: ##223a5e;
+}
+
+
+a {
+    color:white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:#223a5e;
+    padding:20px 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition:all 0.5s;
+}
+
+a:hover {
+    background:rgba(0,0,0,0.3);
+}
+
+.toggleNav {
+    display: none;
+}
+
+h3 p{
+    font-size: small;
+}
+
+.phone {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+img {
+    width:100%;
+}
+
+.card-body {
+    color: #223a5e;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section{
+    text-align: center;
+    background:#223a5e;
+    padding:20px;
+    margin:20px 0;
+    color:white;
+    font-weight: 100;
+    font-size: medium;
+}
+
+
+/*Making the footer flex in a row, not a column*/
+footer {
+    display:flex;
+    align-items:center;
+    flex:1;
+    text-align: center;
+    background:#223a5e;
+    padding:30px;
+    margin:20px 0;
+    color:white;
+    font-weight: 100;
+}
+
+/* Flex Container */
+.flex-nav ul {
+    border:1px solid #223a5e;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+/* Flex Item */
+.flex-nav li {
+    flex:3;
+}
+
+.flex-nav .social {
+    flex:1;
+}
+
+
+@media all and (max-width:1000px) {
+
+  .flex-nav ul {
+      flex-wrap:wrap;
+  }
+
+  .flex-nav li {
+      flex:1 1 50%;
+  }
+
+  .flex-nav .social {
+      flex:1 1 25%;
+  }
+
+}
+
+
+/* This is where I am reordering for vw <=500px */
+
+@media all and (max-width:500px) {
+
+  .flex-nav li {
+      flex-basis:100%;
+  }
+
+
+  /* Flex Container */
+  .wrapper {
+      display:flex;
+      flex-direction:column;
+  }
+
+  /* flex Item reorder*/
+  .wrapper > * {
+      order:9999;
+  }
+
+  /* Nav */
+  .flex-nav {
+      order:1;
+  }
+
+  .toggleNav {
+      display:block;
+  }
+
+  .flex-nav ul {
+      display:none;
+  }
+
+  .flex-nav ul.open {
+      display:flex;
+    }
+
+  /* Header */
+  .top {
+      order:2;
+  }
+
+  /* Details */
+  .details {
+      order:4;
+  }
+
+  /* Hero */
+  .hero {
+      order:3;
+  }
+
+  /* Footer*/
+  footer {
+      order:5;
+  }
+
+}
