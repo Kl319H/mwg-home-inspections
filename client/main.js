@@ -9,6 +9,12 @@ FlowRouter.route('/', {
     }
 });
 
+FlowRouter.route('/about', {
+    action: function(params) {
+        BlazeLayout.render("layout", {nav: "nav", main: "about", footer: "footer"});
+    }
+});
+
 FlowRouter.route('/services', {
     action: function(params) {
         BlazeLayout.render("layout", {nav: "nav", main: "services", footer: "footer"});
@@ -20,7 +26,6 @@ FlowRouter.route('/contact', {
         BlazeLayout.render("layout", {nav: "nav", main: "contact", footer: "footer"});
     }
 });
-
 
 Template.nav.events({
     'click .toggleNav'(event, instance){
