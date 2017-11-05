@@ -50,16 +50,10 @@ Template.services.helpers({
                  "name": "Condition of appliances"
                 },
                 {
-                 "name": "Condition of walls, ceilings, floors, closets, cabinets and shelving"
+                 "name": "Condition of walls, ceilings, flooring, closets, cabinets and shelving"
                 },
                 {
                  "name": "Any signs of moisture intrusion, visable mold or mildew "
-                },
-                {
-                 "name": "Condition of flooring, tile and carpets"
-                },
-                {
-                 "name": "Condition of vents"
                 },
                 {
                  "name": "Any visible structural problems"
